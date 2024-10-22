@@ -1,26 +1,20 @@
-// Smooth Scroll for Navbar Links
-document.querySelectorAll('.nav-links a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
+// Smooth scroll to sections
+function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: 'smooth' });
+}
 
-// Contact Form Validation
+// Form handling
 document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
-    
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const message = document.getElementById('message').value.trim();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
 
-    if (name === '' || email === '' || message === '') {
-        alert('Please fill in all fields.');
+    if (name && email && message) {
+        alert('Thank you for contacting me!');
+        this.reset();
     } else {
-        alert('Message sent successfully!');
-        // Reset form after submission
-        document.getElementById('contactForm').reset();
+        alert('Please fill all fields.');
     }
 });
