@@ -3,83 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ishara Menik - Biostatistics Ph.D. Student">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM3yMmP9W1ctThHnsXvEHy1k5ubtB91zmzO5mE" crossorigin="anonymous">
-    <title>Ishara Menik - Personal Website</title>
+    <title>PhD Student Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="#" class="logo">Ishara Menik</a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Welcome to My Personal Website</h1>
-            <p>Exploring Biostatistics, Deep Learning, and Single-cell Genomics</p>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I'm a second-year Ph.D. student in Biostatistics at the Medical College of Georgia. My research focuses on developing novel dimension reduction methods, Bayesian time series modeling, and single-cell genomics.</p>
-        </div>
-    </section>
-
-    <!-- Research Section -->
-    <section id="research" class="section">
-        <div class="container">
-            <h2>Research Interests</h2>
-            <ul>
-                <li>Deep Learning in Biostatistics</li>
-                <li>Dimension Reduction Methods</li>
-                <li>Bayesian Time Series Modeling</li>
-                <li>Single-cell Genomics</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Publications Section -->
-    <section id="publications" class="section">
-        <div class="container">
-            <h2>Publications</h2>
-            <p>Coming Soon...</p>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out via email or connect with me on GitHub and LinkedIn.</p>
-            <div class="social-icons">
-                <a href="https://github.com/your-github-username" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:your-email@example.com"><i class="fas fa-envelope"></i></a>
+    <header>
+        <nav>
+            <div class="container">
+                <a href="#" class="logo">Your Name</a>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Personal Website</h1>
+            <p>I'm a PhD student specializing in [Your Field of Study].</p>
+            <a href="#about" class="btn">Learn More</a>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>This section will contain a brief biography, research interests, and achievements.</p>
+    </section>
+
+    <section id="research" class="container">
+        <h2>Research</h2>
+        <p>Details about your research projects, focus areas, and methodologies.</p>
+    </section>
+
+    <section id="publications" class="container">
+        <h2>Publications</h2>
+        <ul>
+            <li><a href="#">Publication 1</a> - Short description here.</li>
+            <li><a href="#">Publication 2</a> - Short description here.</li>
+            <li><a href="#">Publication 3</a> - Short description here.</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
         <div class="container">
-            <p>&copy; 2024 Ishara Menik. All rights reserved.</p>
+            <p>© [Year] Your Name. All Rights Reserved.</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-
