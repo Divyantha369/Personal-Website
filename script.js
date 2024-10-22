@@ -1,13 +1,26 @@
-// Burger menu toggle for responsive navigation
-const burger = document.querySelector('.burger');
-const navLinks = document.querySelector('.nav-links');
-
-burger.addEventListener('click', () => {
-    navLinks.classList.toggle('nav-active');
+// Smooth Scroll for Navbar Links
+document.querySelectorAll('.nav-links a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
 
-// Contact form submission alert
-document.getElementById('contact-form').addEventListener('submit', function(e) {
+// Contact Form Validation
+document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
-    alert('Thank you for reaching out! I will get back to you shortly.');
+    
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    if (name === '' || email === '' || message === '') {
+        alert('Please fill in all fields.');
+    } else {
+        alert('Message sent successfully!');
+        // Reset form after submission
+        document.getElementById('contactForm').reset();
+    }
 });
