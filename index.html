@@ -3,116 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PhD Student - Modern Profile</title>
+    <title>My Personal Website</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Navigation Bar -->
     <header>
-        <nav>
-            <div class="container">
-                <a href="#" class="logo">PhD Profile</a>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#research">Research</a></li>
-                    <li><a href="#publications">Publications</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="burger">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
+        <nav class="navbar">
+            <div class="logo">Your Name</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section id="hero">
-        <div class="overlay"></div>
+    <section class="hero">
         <div class="hero-content">
-            <h1>Hi, I'm [Your Name]</h1>
-            <p>A Passionate PhD Student in [Field]</p>
-            <a href="#about" class="btn">Discover My Work</a>
+            <h1>Welcome to My Personal Website</h1>
+            <p>I'm a PhD student specializing in <span>Your Field of Study</span>.</p>
+            <a href="#about" class="btn">Learn More</a>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="container">
-        <div class="about-content">
-            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
-            <div class="about-text">
-                <h2>About Me</h2>
-                <p>A brief introduction about your background, research interests, and what drives your passion for the field. Highlight achievements, awards, and current research focus.</p>
-                <a href="#contact" class="btn-secondary">Contact Me</a>
-            </div>
-        </div>
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>This section will contain a brief biography, research interests, and achievements.</p>
     </section>
 
     <!-- Research Section -->
-    <section id="research" class="colorful-section">
-        <h2>Research Areas</h2>
-        <div class="cards">
-            <div class="card">
-                <i class="fas fa-flask"></i>
-                <h3>Machine Learning</h3>
-                <p>Exploring algorithm development and applications in healthcare and biological sciences.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-dna"></i>
-                <h3>Genomics</h3>
-                <p>Analyzing genetic data for predictive models and causal inference in complex studies.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-chart-line"></i>
-                <h3>Biostatistics</h3>
-                <p>Building statistical models for robust data analysis in epidemiological studies.</p>
-            </div>
-        </div>
+    <section id="research" class="research">
+        <h2>Research</h2>
+        <p>Details about your research projects, focus areas, and methodologies.</p>
     </section>
 
     <!-- Publications Section -->
-    <section id="publications" class="container">
+    <section id="publications" class="publications">
         <h2>Publications</h2>
-        <div class="publication-list">
-            <div class="publication">
-                <h3>Publication Title 1</h3>
-                <p>Short description of the publication.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-            <div class="publication">
-                <h3>Publication Title 2</h3>
-                <p>Short description of the publication.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-            <div class="publication">
-                <h3>Publication Title 3</h3>
-                <p>Short description of the publication.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-        </div>
+        <ul>
+            <li><a href="#">Publication 1</a> - Short description here.</li>
+            <li><a href="#">Publication 2</a> - Short description here.</li>
+            <li><a href="#">Publication 3</a> - Short description here.</li>
+        </ul>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="colorful-section">
+    <section id="contact" class="contact">
         <h2>Contact Me</h2>
-        <form id="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
         </form>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>© [Year] [Your Name]. All Rights Reserved.</p>
-        </div>
-    </footer>
-
+    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
