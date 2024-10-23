@@ -1,148 +1,157 @@
 /* Global Styles */
-* {
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    background-color: #1e1e1e;
-    color: #ddd;
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f3f3;
+    color: #494e52;
+    line-height: 1.5;
 }
 
-a {
-    color: #61dafb;
-    text-decoration: none;
+/* Header */
+.masthead {
+    position: relative;
+    border-bottom: 1px solid #e6e7e8;
+    background-color: #fff;
 }
 
-ul {
-    list-style: none;
-}
-
-/* Navbar */
-.navbar {
-    background-color: #2b2b2b;
-    padding: 1rem 2rem;
+.masthead__inner-wrap {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1em 2em;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
 
-.logo {
-    font-size: 1.5rem;
+.masthead h1 {
+    margin: 0;
+    font-size: 1.8em;
     font-weight: bold;
 }
 
-.nav-links {
+.masthead__menu ul {
     display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.nav-links li {
-    margin-left: 1rem;
+.masthead__menu li {
+    margin-left: 1.5em;
 }
 
-.nav-links a {
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    transition: background 0.3s;
+.masthead__menu a {
+    color: #52adc8;
+    text-decoration: none;
+    font-weight: 600;
 }
 
-.nav-links a:hover {
-    background-color: #444;
+.masthead__menu a:hover {
+    color: #1a6b8e;
 }
 
-/* Hero Section */
-.hero {
-    height: 80vh;
+/* Main Layout */
+#main {
+    max-width: 1280px;
+    margin: 2em auto;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background: #111;
+    padding: 0 2em;
 }
 
-.hero-content {
-    text-align: center;
+/* Sidebar */
+.sidebar {
+    width: 25%;
+    margin-right: 2%;
 }
 
-.profile-img {
-    width: 150px;
-    height: 150px;
+.author__avatar img {
+    max-width: 100%;
     border-radius: 50%;
-    margin-bottom: 1rem;
-    border: 4px solid #61dafb;
+    border: 1px solid #ddd;
 }
 
-h1, h2 {
-    margin: 0.5rem 0;
+.author__content {
+    margin-top: 1em;
 }
 
-h2 {
-    color: #61dafb;
+.author__name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
 }
 
-/* Section Styles */
-section {
-    padding: 4rem 2rem;
-    text-align: center;
+.author__bio {
+    font-size: 1em;
+    margin-bottom: 1em;
 }
 
-h2 {
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
+.author__urls {
+    list-style: none;
+    padding: 0;
 }
 
-.about, .publications, .talks, .projects, .contact {
-    background-color: #2b2b2b;
-    border-radius: 8px;
-    padding: 3rem 2rem;
-    margin: 2rem 0;
+.author__urls li {
+    margin-bottom: 0.5em;
 }
 
-ul li {
-    margin: 1rem 0;
+.author__urls a {
+    color: #52adc8;
+    text-decoration: none;
 }
 
-/* Contact Form */
-form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+.author__urls a:hover {
+    color: #1a6b8e;
 }
 
-input, textarea {
-    margin: 0.5rem 0;
-    padding: 1rem;
-    border: 1px solid #444;
-    border-radius: 5px;
-    background-color: #333;
-    color: #ddd;
+/* Page Content */
+.page__inner-wrap {
+    width: 73%;
 }
 
-button {
-    padding: 0.8rem;
-    background-color: #61dafb;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s;
+.page__content {
+    background: #fff;
+    padding: 2em;
+    margin-bottom: 2em;
+    border: 1px solid #e6e7e8;
+    border-radius: 4px;
 }
 
-button:hover {
-    background-color: #21a1f1;
+.page__content h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #e6e7e8;
+    padding-bottom: 0.5em;
+}
+
+.page__content ul {
+    list-style: disc inside;
+    margin-top: 1em;
+}
+
+.page__content li {
+    margin-bottom: 0.5em;
+}
+
+.page__content p {
+    margin-bottom: 1.5em;
 }
 
 /* Footer */
-footer {
-    padding: 1rem;
-    background-color: #111;
-    color: #888;
+.page__footer {
+    background-color: #fff;
+    border-top: 1px solid #e6e7e8;
     text-align: center;
+    padding: 1em;
+}
+
+.page__footer p {
+    font-size: 0.8em;
+    color: #9ba1a6;
 }
