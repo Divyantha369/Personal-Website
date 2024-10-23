@@ -10,75 +10,68 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navbar -->
-    <header class="navbar">
-        <nav>
-            <div class="logo">[Your Name]</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#talks">Talks</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Header -->
+    <header class="masthead">
+        <div class="masthead__inner-wrap">
+            <h1>Dr. [Your Name]</h1>
+            <nav class="masthead__menu">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#publications">Publications & Awards</a></li>
+                    <li><a href="#services">Professional Services</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="hero-content">
-            <img src="profile.jpg" alt="Profile Image" class="profile-img">
-            <h1>[Your Name]</h1>
-            <h2>PhD Student in Biostatistics</h2>
-            <p>Welcome to my personal website! Explore my research, publications, and projects.</p>
+    <!-- Main Content -->
+    <div id="main" class="page">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="author__avatar">
+                <img src="profile.jpg" alt="Profile Image">
+            </div>
+            <div class="author__content">
+                <h2 class="author__name">[Your Name]</h2>
+                <p class="author__bio">PhD Student in Biostatistics</p>
+                <ul class="author__urls">
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">ResearchGate</a></li>
+                    <li><a href="#">Google Scholar</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Page Content -->
+        <div class="page__inner-wrap">
+            <!-- About Section -->
+            <section id="about" class="page__content">
+                <h2>About Me</h2>
+                <p>I am currently a PhD student in Biostatistics, specializing in statistical modeling and machine learning methods.</p>
+            </section>
+
+            <!-- Publications & Awards -->
+            <section id="publications" class="page__content">
+                <h2>Publications & Awards</h2>
+                <ul>
+                    <li>Paper 1 - Journal Name</li>
+                    <li>Paper 2 - Journal Name</li>
+                    <li>Award 1 - Description</li>
+                </ul>
+            </section>
+
+            <!-- Professional Services -->
+            <section id="services" class="page__content">
+                <h2>Professional Services</h2>
+                <p>Details about professional services and collaborations.</p>
+            </section>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>I am a PhD candidate specializing in biostatistics, focusing on statistical modeling and data analysis for health sciences.</p>
-    </section>
-
-    <!-- Publications Section -->
-    <section id="publications" class="publications">
-        <h2>Publications</h2>
-        <ul>
-            <li><a href="#">Title of Research Paper 1</a> - Journal Name</li>
-            <li><a href="#">Title of Research Paper 2</a> - Journal Name</li>
-            <li><a href="#">Title of Research Paper 3</a> - Journal Name</li>
-        </ul>
-    </section>
-
-    <!-- Talks Section -->
-    <section id="talks" class="talks">
-        <h2>Talks & Presentations</h2>
-        <p>Details about invited talks and conferences.</p>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <p>A showcase of my work, including software projects and collaborations.</p>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <form id="contactForm">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+    </div>
 
     <!-- Footer -->
-    <footer>
+    <footer class="page__footer">
         <p>© [Your Name] 2024 | All Rights Reserved</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
-
