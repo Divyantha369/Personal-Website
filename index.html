@@ -1,77 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal website of a PhD student in Biostatistics">
-    <title>[Your Name] - Biostatistics Researcher</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name – Personal Site</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <!-- Header -->
-    <header class="masthead">
-        <div class="masthead__inner-wrap">
-            <h1>Dr. [Your Name]</h1>
-            <nav class="masthead__menu">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#publications">Publications & Awards</a></li>
-                    <li><a href="#services">Professional Services</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <!-- Main Content -->
-    <div id="main" class="page">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <div class="author__avatar">
-                <img src="profile.jpg" alt="Profile Image">
-            </div>
-            <div class="author__content">
-                <h2 class="author__name">[Your Name]</h2>
-                <p class="author__bio">PhD Student in Biostatistics</p>
-                <ul class="author__urls">
-                    <li><a href="#">Location</a></li>
-                    <li><a href="#">ResearchGate</a></li>
-                    <li><a href="#">Google Scholar</a></li>
-                </ul>
-            </div>
-        </aside>
-
-        <!-- Page Content -->
-        <div class="page__inner-wrap">
-            <!-- About Section -->
-            <section id="about" class="page__content">
-                <h2>About Me</h2>
-                <p>I am currently a PhD student in Biostatistics, specializing in statistical modeling and machine learning methods.</p>
-            </section>
-
-            <!-- Publications & Awards -->
-            <section id="publications" class="page__content">
-                <h2>Publications & Awards</h2>
-                <ul>
-                    <li>Paper 1 - Journal Name</li>
-                    <li>Paper 2 - Journal Name</li>
-                    <li>Award 1 - Description</li>
-                </ul>
-            </section>
-
-            <!-- Professional Services -->
-            <section id="services" class="page__content">
-                <h2>Professional Services</h2>
-                <p>Details about professional services and collaborations.</p>
-            </section>
-        </div>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-left">
+      <h1 class="site-title">Your Name</h1>
     </div>
+    <nav class="nav-right">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#talks">Talks</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#software">Software</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Footer -->
-    <footer class="page__footer">
-        <p>© [Your Name] 2024 | All Rights Reserved</p>
-    </footer>
+  <!-- Hero / About Section -->
+  <section id="about" class="section about-section">
+    <div class="profile-left">
+      <img class="profile-pic" src="https://via.placeholder.com/250" alt="Profile Picture" />
+      <h2 class="profile-name">Your Name</h2>
+      <h3 class="profile-title">Your Title / Role</h3>
+      <h4 class="profile-org">Your Institution or Company</h4>
+    </div>
+    <div class="biography-right">
+      <h2 class="biography-heading">Biography</h2>
+      <p>
+        I am an <strong>assistant professor</strong> in the Department of Lorem Ipsum at
+        <strong>Example University</strong>. Prior to this, I was a <strong>Postdoctoral 
+        Research Fellow</strong>, working on A, B, and C. 
+      </p>
+      <p>
+        I obtained my PhD in some field from <strong>Another University</strong>, where I
+        worked on X, Y, and Z. My research interests lie primarily in unifying approaches 
+        to interesting problems. I enjoy diverse scientific collaborations with various
+        institutions and organizations.
+      </p>
+      <p>
+        This website showcases my background, publications, talks, teaching, software, 
+        projects, and ways to contact me.
+      </p>
+    </div>
+  </section>
+
+  <!-- Publications Section -->
+  <section id="publications" class="section content-section">
+    <h2>Publications</h2>
+    <ul>
+      <li><strong>Paper Title #1</strong> – Journal/Conference, 20XX</li>
+      <li><strong>Paper Title #2</strong> – Journal/Conference, 20XX</li>
+      <li><strong>Paper Title #3</strong> – Journal/Conference, 20XX</li>
+    </ul>
+  </section>
+
+  <!-- Talks Section -->
+  <section id="talks" class="section content-section">
+    <h2>Talks</h2>
+    <ul>
+      <li><strong>Conference Name #1</strong> – Talk Title/Topic, 20XX</li>
+      <li><strong>Conference Name #2</strong> – Talk Title/Topic, 20XX</li>
+    </ul>
+  </section>
+
+  <!-- Teaching Section -->
+  <section id="teaching" class="section content-section">
+    <h2>Teaching</h2>
+    <p>Mention courses, teaching philosophy, or relevant experiences here.</p>
+  </section>
+
+  <!-- Software Section -->
+  <section id="software" class="section content-section">
+    <h2>Software</h2>
+    <p>
+      List notable software packages, open-source projects, or libraries you maintain.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section content-section">
+    <h2>Projects</h2>
+    <p>
+      Showcase interesting projects, labs, or collaborations here.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section content-section">
+    <h2>Contact</h2>
+    <p>
+      Feel free to reach out via:
+      <ul>
+        <li>Email: <a href="mailto:your_email@example.com">your_email@example.com</a></li>
+        <li>GitHub: <a href="https://github.com/yourusername" target="_blank">@yourusername</a></li>
+        <li>Twitter: <a href="https://twitter.com/yourhandle" target="_blank">@yourhandle</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile/" target="_blank">Your Profile</a></li>
+      </ul>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
+
