@@ -1,157 +1,144 @@
-/* Global Styles */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+/* Global Resets & Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: #f2f3f3;
-    color: #494e52;
-    line-height: 1.5;
+html, body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  color: #f1f1f1;
+  background-color: #1f1f24;
+  line-height: 1.5;
 }
 
-/* Header */
-.masthead {
-    position: relative;
-    border-bottom: 1px solid #e6e7e8;
-    background-color: #fff;
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a2a31;
+  padding: 0.5rem 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.masthead__inner-wrap {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 1em 2em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.nav-left {
+  display: flex;
+  align-items: center;
 }
 
-.masthead h1 {
-    margin: 0;
-    font-size: 1.8em;
-    font-weight: bold;
+.site-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
-.masthead__menu ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.nav-right ul {
+  display: flex;
+  list-style: none;
 }
 
-.masthead__menu li {
-    margin-left: 1.5em;
+.nav-right li {
+  margin-left: 1.5rem;
 }
 
-.masthead__menu a {
-    color: #52adc8;
-    text-decoration: none;
-    font-weight: 600;
+.nav-right a {
+  text-decoration: none;
+  color: #f1f1f1;
+  transition: color 0.3s;
 }
 
-.masthead__menu a:hover {
-    color: #1a6b8e;
+.nav-right a:hover {
+  color: #bbb;
 }
 
-/* Main Layout */
-#main {
-    max-width: 1280px;
-    margin: 2em auto;
-    display: flex;
-    padding: 0 2em;
+/* Sections */
+.section {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
-/* Sidebar */
-.sidebar {
-    width: 25%;
-    margin-right: 2%;
+/* About Section Layout */
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
-.author__avatar img {
-    max-width: 100%;
-    border-radius: 50%;
-    border: 1px solid #ddd;
+.profile-left {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2a2a31;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
 }
 
-.author__content {
-    margin-top: 1em;
+.biography-right {
+  flex: 2 1 500px;
+  padding: 2rem;
+  background-color: #2f2f37;
+  border-radius: 8px;
 }
 
-.author__name {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 0.5em;
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
 }
 
-.author__bio {
-    font-size: 1em;
-    margin-bottom: 1em;
+.profile-name {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
 }
 
-.author__urls {
-    list-style: none;
-    padding: 0;
+.profile-title {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
 }
 
-.author__urls li {
-    margin-bottom: 0.5em;
+.profile-org {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #bbb;
 }
 
-.author__urls a {
-    color: #52adc8;
-    text-decoration: none;
+.biography-heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
 }
 
-.author__urls a:hover {
-    color: #1a6b8e;
+/* Generic content section styling */
+.content-section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  font-weight: 400;
 }
 
-/* Page Content */
-.page__inner-wrap {
-    width: 73%;
+.content-section ul {
+  list-style-position: inside;
+  margin-left: 1rem;
+  line-height: 1.8;
 }
 
-.page__content {
-    background: #fff;
-    padding: 2em;
-    margin-bottom: 2em;
-    border: 1px solid #e6e7e8;
-    border-radius: 4px;
-}
-
-.page__content h2 {
-    font-size: 1.5em;
-    margin-bottom: 1em;
-    border-bottom: 1px solid #e6e7e8;
-    padding-bottom: 0.5em;
-}
-
-.page__content ul {
-    list-style: disc inside;
-    margin-top: 1em;
-}
-
-.page__content li {
-    margin-bottom: 0.5em;
-}
-
-.page__content p {
-    margin-bottom: 1.5em;
+.content-section ul li {
+  margin-bottom: 0.5rem;
 }
 
 /* Footer */
-.page__footer {
-    background-color: #fff;
-    border-top: 1px solid #e6e7e8;
-    text-align: center;
-    padding: 1em;
-}
-
-.page__footer p {
-    font-size: 0.8em;
-    color: #9ba1a6;
+.footer {
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  background-color: #2a2a31;
+  font-size: 0.9rem;
+  color: #aaa;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5);
 }
